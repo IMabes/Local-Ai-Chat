@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# VS Code
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment / secrets
+.env
+
+# Büyük modeller
+*.pt
+*.pth
+*.onnx
+*.h5
+
+# Görseller / çıktılar
+output/
+outputs/
+results/
+
+# OS
+Thumbs.db
+.DS_Store
