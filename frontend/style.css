@@ -1,0 +1,74 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #14171a;
+  color: #e8eae7;
+  font-family: system-ui, -apple-system, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+}
+
+#chat {
+  width: 100%;
+  max-width: 640px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  padding-bottom: 16px;
+}
+
+.message {
+  max-width: 75%;
+  padding: 10px 14px;
+  border-radius: 12px;
+  line-height: 1.4;
+  white-space: pre-wrap;
+}
+
+.message.user {
+  align-self: flex-end;
+  background: #2f7d6b;
+  color: #ffffff;
+}
+
+.message.assistant {
+  align-self: flex-start;
+  background: #20252a;
+  border: 1px solid #2b3136;
+}
+
+#chat-form {
+  width: 100%;
+  max-width: 640px;
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+#message-input {
+  flex: 1;
+  resize: none;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #2b3136;
+  background: #1b1f22;
+  color: #e8eae7;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+button[type="submit"] {
+  padding: 0 18px;
+  border: none;
+  border-radius: 8px;
+  background: #2f7d6b;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
